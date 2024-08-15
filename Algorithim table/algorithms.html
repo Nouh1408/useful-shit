@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search and Sorting Algorithms</title>
+    <link rel="stylesheet" href="algorithms.css">
+</head>
+<body>
+    <h1>Search Algorithms</h1>
+    <input type="text" id="search" placeholder="Search in table...">
+    <table id="algorithmTable">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0, 'algorithmTable')">Algorithm</th>
+                <th onclick="sortTable(1, 'algorithmTable')">Best Time Complexity</th>
+                <th onclick="sortTable(2, 'algorithmTable')">Average Time Complexity</th>
+                <th onclick="sortTable(3, 'algorithmTable')">Worst Time Complexity</th>
+                <th onclick="sortTable(4, 'algorithmTable')">Space Complexity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://www.geeksforgeeks.org/is-sentinel-linear-search-better-than-normal-linear-search/?ref=gcse">Linear Search</a></td>
+                <td>O(1)</td>
+                <td>O(n)</td>
+                <td>O(n)</td>
+                <td>O(1)</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.geeksforgeeks.org/binary-search/">binary search</a></td>
+                <td>O(1)</td>
+                <td>O(log n)</td>
+                <td>O(log n)</td>
+                <td>O(1)</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.geeksforgeeks.org/interpolation-formula/">Interpolation Search</a></td>
+                <td>O(log log n)</td>
+                <td>O(n)</td>
+                <td>O(n)</td>
+                <td>O(1)</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h1>Sorting Algorithms</h1>
+    <table id="sortingTable">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0, 'sortingTable')">Algorithm</th>
+                <th onclick="sortTable(1, 'sortingTable')">Best Time Complexity</th>
+                <th onclick="sortTable(2, 'sortingTable')">Average Time Complexity</th>
+                <th onclick="sortTable(3, 'sortingTable')">Worst Time Complexity</th>
+                <th onclick="sortTable(4, 'sortingTable')">Space Complexity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://www.geeksforgeeks.org/bubble-sort-in-cpp/">Bubble Sort</a></td>
+                <td>O(n<sup>2</sup>)</td>
+                <td>O(n<sup>2</sup>)</td>
+                <td>O(n<sup>2</sup>)</td>
+                <td>O(1)</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.geeksforgeeks.org/selection-sort-algorithm-2/">Selection Sort</a></td>
+                <td>O(n<sup>2</sup>)</td>
+                <td>O(n<sup>2</sup>)</td>
+                <td>O(n<sup>2</sup>)</td>
+                <td>O(1)</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.geeksforgeeks.org/insertion-sort-algorithm/">Insertion Sort</a></td>
+                <td>O(n)</td>
+                <td>O(n<sup>2</sup>)</td>
+                <td>O(n<sup>2</sup>)</td>
+                <td>O(1)</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.geeksforgeeks.org/merge-sort/">Merge Sort</a></td>
+                <td>O(n log n)</td>
+                <td>O(n log n)</td>
+                <td>O(n log n)</td>
+                <td>O(n)</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.geeksforgeeks.org/quick-sort-algorithm/">Quick Sort</a></td>
+                <td>O(n log n)</td>
+                <td>O(n log n)</td>
+                <td>O(n<sup>2</sup>)</td>
+                <td>O(log n)</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <script src="algorithms.js"></script>
+</body>
+</html>
