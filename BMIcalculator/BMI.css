@@ -1,17 +1,86 @@
-h1{
-    color: #A0937D;
+/* BMI.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
 }
-h3{
-    color: #A0937D;
-}
-body{
-    background-color: #B6C7AA;
-}
-#res{
-    color: black;
-}
-html{
+
+h1 {
+    font-size: 2.5em;
+    color: #ffffff;
     text-align: center;
-    margin: 200px;
-    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #e0e0e0;
+}
+
+input[type="number"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #2f80ed;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #219150;
+    transform: translateY(-2px);
+}
+
+p {
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+hr {
+    width: 100%;
+    max-width: 400px;
+    border: 0;
+    height: 2px;
+    background-color: #e0e0e0;
+    margin: 30px 0;
+    opacity: 0.7;
 }
